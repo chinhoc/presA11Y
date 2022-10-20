@@ -3,29 +3,117 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>ACCESSIBILITY for Rainbow</title>
 
-		<title>reveal.js</title>
+		<meta name="description" content="A small presentation of AY11 and perspectives for RAinbow">
+		<meta name="author" content="Chin Ho CHEUNG, Pierre LEBER">
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/zenburn.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2
-						<aside class="notes">
-						<p>Some notes</p>
-						</aside>
-						<p>Some slide text</p>
-						<aside class="notes">
-						<p>and some more notes</p>
-					</aside>
+				<section>
+					<h2>ACCESSIBILITY</h2>
+					<small>(ou A11Y pour les intiimes)</small>
 				</section>
+				<section>
+					<section>
+						<h3>Qu'est ce que l'A11Y ?</h3>
+						<aside class="notes">
+							<ul>
+								<li>Mise à dispo des sites au plus grand nombre</li>
+								<li>Pas forcément un handicap</li>
+								<li>Obligation légale</li>
+							</ul>							
+						</aside>
+					</section>
+					<section data-background-iframe="https://accessibilite.numerique.gouv.fr/" data-preload>
+						<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>RGAA</h2>
+							<small>Référentiel général d'amélioration de l'accessibilité</small>
+							<p style="font-size: 0.6em;"><a href= "https://accessibilite.numerique.gouv.fr/">https://accessibilite.numerique.gouv.fr/</a></small></p>
+						</div>
+						<aside class="notes">
+							<ul>
+								<li>Référentiel français</li>
+								<li>critères de tests</li>
+							</ul>	
+						</aside>
+					</section>
+					<section data-background-iframe="https://www.w3.org/WAI/standards-guidelines/wcag/" data-preload>
+						<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>WCAG</h2>
+							<small>Web Content Accessibility Guidelines</small>
+							<p style="font-size: 0.6em;"><a href= "https://www.w3.org/WAI/standards-guidelines/wcag/">https://www.w3.org/WAI/standards-guidelines/wcag/</a></p>
+						</div>
+						<aside class="notes">
+							<ul>
+								<li>Référentiel international</li>
+							</ul>	
+						</aside>
+					</section>
+			</section>
+			<section>
+				<h5>Pour les aveugles et les malvoyants ?</h5>
+				<p>
+					<div class="fragment">
+						<small>
+							Quelques outils ... <br>
+							<ul>
+								<li class="fragment">NVDA (Win)</li>
+								<li class="fragment">JAWS (Win)</li>
+								<li class="fragment">VoiceOver (iOS)</li>
+								<li class="fragment">Orca (Linux)</li>
+							</ul><br><br>
+						</small>
+					</div>
+				</p>
+				<aside class="notes">
+					<ul>
+						<li>NVDA: Gratuit</li>
+						<li>JAWS: Payant pour win, gratuit pour DOS. Le plus populaire (53.7%)</li>
+						<li>VoiceOver: Gratuit</li>
+						<li>ORCA: Gratuit</li>
+					</ul>	
+				</aside>
+				<aside class="notes">Demo NVDA sur Rainbow</aside>
+
+			</section>
+			<section>
+				<h5>Et pour les daltoniens ?</h5>
+				<aside class="notes">Demo Rendering > vision deficiencies</aside>
+			</section>
+			<section>
+				<h5>Et si on ne se servait que du clavier ?</h5>
+				<aside class="notes">Naviguer au clavier dans Rainbow</aside>
+			</section>
+			<section>
+				<h5>Où en est-on ?</h5>
+				<p>
+					<div class="fragment">
+						<small>
+							Audit des applications Rainbow par <a href="https://access42.net/">Access42</a>
+						</small>
+					</div>
+				</p>
+				<aside class="notes">
+					<ul>
+						<li>Uniquement sur certaines pages</li>
+						<li>Référentiel quasi inexistant pour les mobiles</li>
+					</ul>	
+
+				</aside>
+			</section>
+			<section>
+				<h5>Un petit exercice ?</h5>
+				<aside class="notes">Exemple 3 types de boutons à rendre accessible</aside>
+			</section>
 			</div>
 		</div>
 
